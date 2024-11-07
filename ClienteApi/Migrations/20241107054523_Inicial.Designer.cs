@@ -11,8 +11,8 @@ using Tecnicos.Data.Context;
 namespace ClienteApi.Migrations
 {
     [DbContext(typeof(ClientesContext))]
-    [Migration("20241103155505_CLienteApi")]
-    partial class CLienteApi
+    [Migration("20241107054523_Inicial")]
+    partial class Inicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
