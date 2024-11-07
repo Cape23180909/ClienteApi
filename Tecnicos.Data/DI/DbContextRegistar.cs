@@ -13,11 +13,7 @@ public static class DbContextRegistar
 {
     public static IServiceCollection RegisterDbContextFactory(this IServiceCollection services)
     {
-        services.AddDbContextFactory<ClientesContext>(options =>
-            options.UseSqlServer("Name=SqlConStr",
-                sqlOptions => sqlOptions.MigrationsAssembly("ClienteApi")
-            )
-        );
+        services.AddDbContextFactory<ClientesContext>(options => options.UseSqlServer("Name=SqlConStr"));
         return services;
     }
 }
